@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+:root {
+    --primaryColor: #d3a930;
+    --secondColor: #027466;
+    --mainWhite: #fff;
+    --offWhite: #f8f9fc;
+    --mainBlack: #1f1e1a;
+    --gray: #e9ecef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+body {
+    font-family: "Tajawal", sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.4;
+    background: var(--offWhite);
+}
+
+@media screen and (min-width: 769px) {
+    .chat-container {
+        position: relative;
+        top: 4rem;
+    }
+}
+
+
+/* login */
+
+
+/* navbar */
+
+@media screen and (min-width: 577px) {
+    .nav-cont {
+        display: flex;
+    }
+    .nav-cont>a {
+        justify-self: flex-start !important;
+    }
+    .nav-cont>.asd {
+        justify-self: flex-end !important;
+    }
+}
+
+
+/* home */
+
+nav {
+    display: flex;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    height: 55px;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav> :first-child {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav> :first-child>h3>i {
+    margin-top: 7px;
+}
+.logo{
+    width: 80px;
+    
+}
+.logo img {
+width: 100%;
+}
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), rgba(211, 169, 48, 0.6)), url("../imgs/bg.jpeg") center/cover no-repeat fixed;
+    height: calc(100vh - 55px);
+    overflow: hidden;
+}
+
+header> :first-child {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.scroll-h {
+    width: max-content;
+    max-height: 400px !important;
+    min-height: 400px !important;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #bd9d40;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8f7731;
+}
+
+.side {
+    flex: 30%;
+    background-color: var(--gray);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.main {
+    flex: 60%;
+}
+
+.main a {
+    background: #bd9d40;
+    color: var(--mainWhite);
+    transition: all 0.4s ease;
+    border: 2px solid #bd9d40 !important;
+    transition: all 0.8s ease;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main a:hover {
+    background: #bd9d40 !important;
+    color: var(--mainWhite);
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+    .scroll-h {
+        max-height: 300px !important;
+        min-height: 300px !important;
+    }
+}
+
+
+/* professor */
+
+.professor> :first-child {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.professor> :last-child {
+    margin-top: 1.8rem;
+}
+
+.professor section {
+    display: flex;
+    align-items: center;
+}
+
+.professor section i {
+    margin-top: -0.8rem;
+    font-size: 25px;
+    color: var(--secondColor);
+    margin-left: 1rem;
+}
+
+.professor section>p {
+    font-size: 25px;
+    color: var(--mainBlack);
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+
+/* materials */
+
+.materials> :first-child {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.materials .container {
+    margin-top: 1.5rem;  
+}
+.materials .clickbtn{
+    margin: .3rem;
+    padding: 5px;
+    background: var(--secondColor);
+    color: var(--mainWhite);
+    border-radius: 5px !important;
+    min-width: 3rem;
+    max-width: 10rem;
+
+}
+.materials .clickbtn:hover{
+    background: #016257 !important;
+    color: var(--mainWhite) !important;
+    
+}
+.img-cont{
+    /* display: none; */
+}
+.default-dev{
+    display: block;
+}
+.materials .container img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .materials .container img {
+        width: 100%;
+        height: 18rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* talabat */
+
+.talabat> :first-child {
+    text-align: center;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.talabat> :first-child> :last-child {
+    margin-top: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.talabat> :first-child> :last-child:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.talabat> :last-child {
+    margin-top: 1.8rem;
+}
+
+.talabat> :last-child>h4 {
+    margin-bottom: 1.5rem;
+}
+
+.modal-body>section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body>section>p {
+    flex: 35%;
+    margin-top: 0.5rem;
+}
+
+
+/* login/register */
+
+.auth {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(211, 169, 48, 0.5));
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 1.5rem;
+}
+.auth button{
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+.auth button:hover{
+    background: #ba9730 !important;
+    color: var(--mainWhite) !important;
+}
+.auth .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth .header>h1 {
+    color: var(--primaryColor);
+    margin-bottom: 3rem;
+}
+
+.h-btns{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.auth .login-card {
+    background: var(--offWhite);
+    width: 80%;
+    margin: auto;
+    max-width: 500px;
+    min-height: 220px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.login-go-btn {
+    margin-top: 1.5rem;
+}
+.auth .reg-card {
+    background: var(--offWhite);
+    width: 80%;
+    margin: auto;
+    max-width: 500px;
+    min-height: 300px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+form .form-group input {
+    margin-bottom: 1rem;
+    background: var(--gray);
+    outline: none;
+}
+form button{
+    margin-top: .5rem;
+    margin-bottom: .5rem !important;
+}
+
+input[type="email"]:-moz-placeholder {
+    text-align: right;
+}
+input[type="email"]:-ms-input-placeholder {
+    text-align: right;
+}
+input[type="email"]::-webkit-input-placeholder {
+    text-align: right;
+}
+@media only screen and (min-width: 400px) {
+    form .btn {
+        margin-bottom: 1rem;
+    }
+    .login-go-btn {
+        margin-top: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    form .btn {
+        margin-bottom: 2rem;
+    }
+    .h-btns{
+        margin-bottom: 3rem;
+    }
+}
+
+/* js */
+.reg-card{
+    display: none;
+}
+
+/* common qs */
+.commonqs {
+    padding: 1rem .5rem;
+}
+.commonqs section p{
+    font-size: larger;
+}
+.commonqs section>:first-child{
+    color: var(--secondColor);
+}
